@@ -37,11 +37,11 @@ const Signup = ({ setUser }) => {
 
   const handleSignIn = (data) => {
     setUser(data.name);
-    history.push("/signed");
+    history.push(`/signed/${data.name}`);
   };
 
   return (
-    <div className='signup'>
+    <div className="signup">
       <form onSubmit={handleSubmit(handleSignIn)}>
         <Input
           placeholder="Seu nome"

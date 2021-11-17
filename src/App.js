@@ -13,8 +13,8 @@ function App() {
         <Route exact path="/">
           <Signup setUser={setUser} />
         </Route>
-        <Route path="/signed">
-          <Signed user={user} />
+        <Route path="/signed/:user">
+          <Signed />
         </Route>
       </Switch>
     </div>
